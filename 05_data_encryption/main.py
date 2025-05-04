@@ -9,8 +9,8 @@ from hashlib import pbkdf2_hmac
 
 # === Constants ===
 DATA_FILE = "secure_data.json"
-SALT = b"secure_salt_value"  # Keep this secret & consistent across sessions
-LOCKOUT_DURATION = 60  # in seconds
+SALT = b"secure_salt_value" 
+LOCKOUT_DURATION = 60  
 
 # === Session State Initialization ===
 if "authenticated_user" not in st.session_state:
